@@ -1,0 +1,5 @@
+.vscode
+*.pyc
+test
+utils/build
+utils/nms/

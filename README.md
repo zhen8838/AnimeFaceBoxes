@@ -18,3 +18,24 @@ Super fast anime face detection (> 200 fps for 512x512 resolution, RTX2080 + i7 
 
 
 codes borrowed a lot from [FaceBoxes.PyTorch](https://github.com/zisianw/FaceBoxes.PyTorch)
+
+-----
+
+## export face annotation from movie
+
+```sh
+python ./auto_anno_movie.py --output_dir /media/zqh/Documents/jojo-face-landmark \
+    --input_dir /media/zqh/Documents/JOJO4 \
+    --id 1 \
+    --landmark
+```
+
+**NOTE** use `--landmark` can export bbox with landmark, then we can use `labelme` adjust annotation.
+
+
+## use `label_face_landmark.py` or `labelme` rewrite annotation
+
+```sh
+python ./label_face_landmark.py --dataset /media/zqh/Documents/jojo-face-landmark/02
+```
+
